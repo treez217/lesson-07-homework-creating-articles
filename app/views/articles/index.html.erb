@@ -1,0 +1,15 @@
+<h1> Techcrunch Bootleg Version</h1>
+
+<%= link_to 'Create New Article', new_article_path%>
+
+<% @articles.each do | article | %>
+
+	<p>
+
+	<h3> <span><%= article.title %> </span> </h3>
+
+	<p> <span><%= article.body %> </span> </p> 
+
+	</p>
+
+<% end %>
